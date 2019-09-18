@@ -2,3 +2,7 @@ body {
     background-color: pink;
     color: blue;
 }
+
+section {
+    text-align: center;
+}
