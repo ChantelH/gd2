@@ -4,6 +4,10 @@ body {
     opacity: 0.85;
 }
 
+div {
+    font-size: 50px;
+}
+
 header {
     color: rgba(221, 64, 50);
     margin-top: 50px;
