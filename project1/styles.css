@@ -2,6 +2,8 @@ blockquote p {
     font-family: 'Satisfy', cursive;
     font-size: 30px;
     line-height: 1;
+    margin-left: 150px;
+    margin-right: 150px;
     text-align: center;
 }
 
