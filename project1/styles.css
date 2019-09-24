@@ -2,16 +2,17 @@ blockquote p {
     font-family: 'Satisfy', cursive;
     font-size: 30px;
     line-height: 1;
+    text-align: center;
 }
 
 body {
-    background-color: rgb(14, 190, 204);
+
     color: white;
-    opacity: 1;
 }
 
 div {
     font-size: 40px;
+    text-align: center;
 }
 
 h1 {
@@ -42,22 +43,38 @@ p {
 }
 
 section p {
-    text-align: justify;
-    margin-left: 300px;
-    margin-right: 300px;
     font-size: 15px;
-
+    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: justify;
 }
 
-.anchor {
+
+main {
+    background-color: rgb(14, 190, 204);
+    border: 20px gray;
+    height: 1800px;
+    margin: 30px auto;
+    padding: 30px auto;
+    text-align: center;
+    width: 1000px;
+}
+
+
+.anchor,
+.date {
     font-size: 15px;
+}
+
+
+.anchor {
     margin-top: 15px;
     margin-bottom: 0;
 }
 
 
 .date {
-    font-size: 15px;
     margin-top: 0;
     margin-bottom: 10px;
 }
