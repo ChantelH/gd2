@@ -2,41 +2,42 @@ blockquote p {
     font-family: 'Satisfy', cursive;
     font-size: 30px;
     line-height: 1;
-    margin-left: 150px;
-    margin-right: 150px;
     text-align: center;
 }
 
-body {
+blockquote {
+    margin-left: 150px;
+    margin-right: 150px;
+}
 
-    color: white;
+
+body {
+    background-color: rgb(14, 190, 204);
+    color: whitesmoke;
 }
 
 div {
-    font-size: 40px;
+    font-size: 18px;
+    letter-spacing: 6px;
+    line-height: 1;
     text-align: center;
 }
 
-h1 {
-    margin-bottom: 0;
-}
-
-a {
-    margin-top: 0
-}
 
 header {
     color: navy;
     font-family: 'Fjalla One', sans-serif;
     font-size: 60px;
     letter-spacing: 3px;
-
+    line-height: 0.75;
 }
+
 
 h1 {
-    margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
+    margin-top: 125px;
 }
+
 
 p {
     font-family: 'Montserrat', sans-serif;
@@ -55,10 +56,9 @@ section p {
 
 main {
     background-color: rgb(14, 190, 204);
-    border: 20px gray;
-    height: 1800px;
+    border: 15px solid whitesmoke;
+    height: 1950px;
     margin: 30px auto;
-    padding: 30px auto;
     text-align: center;
     width: 1000px;
 }
@@ -78,7 +78,7 @@ main {
 
 .date {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 * {
