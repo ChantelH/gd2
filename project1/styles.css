@@ -1,6 +1,7 @@
 blockquote {
     margin: 0;
 }
+
 blockquote p {
     font-family: 'Satisfy', cursive;
     font-size: 30px;
@@ -20,12 +21,8 @@ body {
 }
 
 div {
-<<<<<<< HEAD
     font-size: 18px;
     letter-spacing: 6px;
-=======
-    font-size: 40px;
->>>>>>> 3b1c7598f40c89462f2ee8a708631f15f9815333
     line-height: 1;
     text-align: center;
 }
@@ -63,13 +60,8 @@ section p {
 
 main {
     background-color: rgb(14, 190, 204);
-<<<<<<< HEAD
     border: 15px solid whitesmoke;
     height: 1950px;
-=======
-    border: 20px solid gray;
-    height: 1800px;
->>>>>>> 3b1c7598f40c89462f2ee8a708631f15f9815333
     margin: 30px auto;
     text-align: center;
     width: 1000px;
