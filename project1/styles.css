@@ -1,3 +1,6 @@
+blockquote {
+    margin: 0;
+}
 blockquote p {
     font-family: 'Satisfy', cursive;
     font-size: 30px;
