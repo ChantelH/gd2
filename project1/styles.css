@@ -59,7 +59,7 @@ section p {
 
 main {
     background-color: rgb(14, 190, 204);
-    border: 20px gray;
+    border: 20px solid gray;
     height: 1800px;
     margin: 30px auto;
     padding: 30px auto;
