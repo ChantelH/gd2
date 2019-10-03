@@ -1,0 +1,113 @@
+/* for my pullquote */
+
+blockquote {
+    margin: 0;
+}
+
+/* for my pullquote */
+
+blockquote p {
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+    line-height: 1.25;
+    text-align: center;
+}
+
+/* for my pullquote */
+
+blockquote {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/* I wanted the background color of the <body> to be the same as the background color of the <main> element */
+
+body {
+    background-color: rgb(14, 190, 204);
+    color: whitesmoke;
+    margin: 125px;
+}
+
+
+/* for adding style to the bullets between my sections */
+
+div {
+    font-size: 18px;
+    letter-spacing: 6px;
+    line-height: 1;
+    text-align: center;
+}
+
+
+header {
+    color: navy;
+    font-family: 'Denk One', sans-serif;
+    font-size: 50px;
+    font-weight: 700px;
+    letter-spacing: 2px;
+    line-height: 0.75;
+}
+
+
+h1 {
+    margin-bottom: 0;
+    margin-top: 125px;
+}
+
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+/* "section p" is to add a certain style to the paragraphs within the section elements themselves & to distinguish between any other <p> tags outside of the sections */
+
+section p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: justify;
+}
+
+/* I only wanted to have a white border around my text */
+
+main {
+    background-color: rgb(14, 190, 204);
+    border: 8px solid whitesmoke;
+    height: 2025px;
+    margin: 30px auto;
+    text-align: center;
+    width: 1000px;
+}
+
+/* this was just to add color to the 'I' in my pullquote */
+span {
+    color: navy;
+    opacity: 0.5;
+}
+
+/* I made classes for the anchor and the date because I wanted to edit them directly */
+
+.anchor,
+.date {
+    font-size: 15px;
+}
+
+
+.anchor {
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+
+.date {
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
