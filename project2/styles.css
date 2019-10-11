@@ -3,8 +3,26 @@
 }
 
 body {
-    background-color:;
-    color:;
-    font-family:;
+    background-color: #508d8b;
+    color: black;
+    font-family: ;
 
 }
+
+img {
+    height: 451px;
+    width: 318px;
+}
+
+.favorite {
+    height: 45px;
+    width: 43px;
+
+}
+
+.read-more {
+    height: 59px;
+    width: 59px;
+}
+
+
