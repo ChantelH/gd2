@@ -9,6 +9,14 @@ body {
 
 }
 
+
+h2,
+h3,
+h4 {
+    margin-inline-start: 6px;
+}
+
+
 h3 {
     font-size: 37px;
     line-height: 1;
@@ -20,16 +28,15 @@ h2 {
 
 }
 
-img {
-    height: 451px;
-    width: 318px;
-    text-align: center;
-}
-
 h4 {
     display: inline-block;
     font-size: 8px;
     line-height: 1;
+}
+
+img {
+    height: 451px;
+    width: 318px;
 }
 
 p {
