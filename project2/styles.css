@@ -9,8 +9,10 @@ body {
 
 }
 
-h1 {
+h3 {
     font-size: 37px;
+    line-height: 1;
+    margin: 0;
 }
 
 h2 {
@@ -24,8 +26,9 @@ img {
 }
 
 h4 {
-    font-size: 7px;
     display: inline-block;
+    font-size: 8px;
+    line-height: 1;
 }
 
 p {
@@ -33,11 +36,13 @@ p {
 }
 
 ul {
+    padding-inline-start: 0;
     text-align: center;
 }
 
 li {
     display: inline-block;
+
 
 }
 
