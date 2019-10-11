@@ -23,12 +23,17 @@ img {
     width: 318px;
 }
 
-h6 {
+h4 {
     font-size: 7px;
+    display: inline-block;
 }
 
 p {
     font-size: 10.5px;
+}
+
+ul {
+    text-align: center;
 }
 
 li {
@@ -43,6 +48,8 @@ li+li {
 .card {
     background-color: whitesmoke;
     height: 755px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 15px;
     position: relative;
     width: 400px;
@@ -79,12 +86,12 @@ li+li {
 }
 
 .twitter {
-    height: 15px;
+    height: 14px;
     /* width: 12px; */
 }
 
 .instagram {
-    height: 14px;
+    height: 15px;
     /* width: 14px */
 }
 
@@ -96,6 +103,6 @@ li+li {
 .comment {
     height: 31px;
     position: absolute;
-    right: 50px;
-    bottom: 50px;
+    right: 15px;
+    bottom: 15px;
 }
