@@ -65,15 +65,19 @@ li+li {
     border: 3px gray solid;
     padding: 20px;
     position: relative;
+    right: 3px;
     height: 725px;
     width: 378px;
 
 }
 
-
-.favorite {
+.img-wrapper .favorite {
     height: 45px;
+    left: 10px;
+    position: absolute;
+    top: 10px;
     width: 43px;
+    z-index: 1;
 
 }
 
