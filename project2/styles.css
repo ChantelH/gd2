@@ -23,6 +23,7 @@ h2 {
 img {
     height: 451px;
     width: 318px;
+    text-align: center;
 }
 
 h4 {
@@ -74,13 +75,14 @@ li+li {
 .img-wrapper {
     padding: 10px;
     position: relative;
+    right: 4px;
 }
 
 .favorite {
     height: 45px;
-    left: 10px;
+    left: -5px;
     position: absolute;
-    top: 10px;
+    top: -10px;
     width: 43px;
     z-index: 1;
 
@@ -88,13 +90,15 @@ li+li {
 
 .read-more {
     height: 59px;
-    left: 295alipx;
+    left: 285px;
     position: absolute;
-    top: 420px;
+    top: 440px;
     width: 59px;
 }
 
-.facebook {
+.facebook,
+.instagram,
+.pinterest {
     height: 15px;
     /* width: 7px; */
 }
@@ -102,16 +106,6 @@ li+li {
 .twitter {
     height: 14px;
     /* width: 12px; */
-}
-
-.instagram {
-    height: 15px;
-    /* width: 14px */
-}
-
-.pinterest {
-    height: 15px;
-    /* width: 12 */
 }
 
 .comment {
