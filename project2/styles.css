@@ -71,7 +71,12 @@ li+li {
 
 }
 
-.img-wrapper .favorite {
+.img-wrapper {
+    padding: 10px;
+    position: relative;
+}
+
+.favorite {
     height: 45px;
     left: 10px;
     position: absolute;
@@ -83,9 +88,9 @@ li+li {
 
 .read-more {
     height: 59px;
-    left: 800px;
+    left: 295px;
     position: absolute;
-    top: 500px;
+    top: 420px;
     width: 59px;
 }
 
