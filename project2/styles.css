@@ -132,15 +132,19 @@ li+li {
     /* width: 7px; */
 }
 
-.facebook {
-    fill: green;
+.facebook:hover {
+    background-color: black;
+    border-radius: 50%;
+    padding: 20px;
+    fill: purple;
 }
 
-.facebook:hover {
-    background-color: yellow;
-    border-radius: 50%;
+.facebook path {
+    fill: purple;
+}
+
+.facebook:hover path {
     fill: green;
-    padding: 20px;
 }
 
 .twitter {
@@ -153,4 +157,8 @@ li+li {
     position: absolute;
     right: 15px;
     bottom: 15px;
+}
+
+.comment-bw path {
+    fill: green;
 }
