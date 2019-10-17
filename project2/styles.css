@@ -15,7 +15,6 @@ h3,
 h4,
 p {
     padding-left: 10px;
-    padding-right: 10px
 }
 
 
@@ -131,6 +130,17 @@ li+li {
 .pinterest {
     height: 15px;
     /* width: 7px; */
+}
+
+.facebook {
+    fill: green;
+}
+
+.facebook:hover {
+    background-color: yellow;
+    border-radius: 50%;
+    fill: green;
+    padding: 20px;
 }
 
 .twitter {
