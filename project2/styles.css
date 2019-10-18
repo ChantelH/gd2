@@ -93,7 +93,9 @@ svg:hover path {
 }
 
 
-
+.shape path {
+    fill: #703f6c;
+}
 
 .card {
     background-color: whitesmoke;
@@ -111,6 +113,17 @@ svg:hover path {
     margin-bottom: 50px;
     margin-top: 50px;
     position: relative;
+
+}
+
+.comments {
+    background-color: #703f6c;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    line-height: 1;
+    padding: 10px;
+    text-align: center;
 
 }
 
