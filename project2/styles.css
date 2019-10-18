@@ -122,8 +122,9 @@ svg:hover path {
     bottom: 15px;
     color: white;
     display: inline-block;
+    font-size: 8px;
     line-height: 1;
-    padding: 10px;
+    padding: 5px;
     position: absolute;
     right: 10px;
     text-align: center;
