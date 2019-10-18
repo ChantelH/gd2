@@ -119,10 +119,13 @@ svg:hover path {
 .comments {
     background-color: #703f6c;
     border-radius: 50%;
+    bottom: 15px;
     color: white;
     display: inline-block;
     line-height: 1;
     padding: 10px;
+    position: absolute;
+    right: 10px;
     text-align: center;
 
 }
