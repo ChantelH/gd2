@@ -25,14 +25,23 @@ p {
 
 
 h3 {
-    font-size: 37px;
+    font-family: bebas-neue-by-fontfabric, sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 3px;
     line-height: 1;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 h2 {
+    font-family: termina, sans-serif;
     font-size: 10.5px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 
 }
 
@@ -52,7 +61,10 @@ img {
 }
 
 p {
+    font-family: montserrat, sans-serif;
     font-size: 10.5px;
+    font-style: normal;
+    font-weight: 300;
     margin-inline-end: 6px;
 }
 
@@ -117,6 +129,10 @@ li+li {
     fill: pink;
 }
 
+/* a:active {
+    fill: pink;
+} */
+
 .read-more {
     bottom: 0;
     height: 59px;
@@ -156,9 +172,6 @@ a:hover {
     display: block;
     height: 30px;
     width: 30px;
-    line-height: 30px;
-    /* position: relative; */
-    /* padding: 15px; */
 }
 
 .facebook:hover path {
