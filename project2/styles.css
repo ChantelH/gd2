@@ -138,14 +138,43 @@ li+li {
     margin-top: 10px;
 }
 
-.facebook,
-.instagram,
-.pinterest,
-.twitter:hover {
+
+/* .twitter:hover {
     background-color: #eaaa0a;
     border-radius: 50%;
     display: inline-block;
     padding: 15px;
+}
+
+.twitter:hover path {
+    fill: green;
+} */
+
+a:hover {
+    background-color: #eaaa0a;
+    border-radius: 50%;
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    /* position: relative; */
+    /* padding: 15px; */
+}
+
+.facebook:hover path {
+    fill: whitesmoke;
+}
+
+.twitter:hover path {
+    fill: whitesmoke;
+}
+
+.instagram:hover path {
+    fill: whitesmoke;
+}
+
+.pinterest:hover path {
+    fill: whitesmoke;
 }
 
 .facebook,
