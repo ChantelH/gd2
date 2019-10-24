@@ -150,29 +150,30 @@ span {
 }
 
 .comment-wrapper {
-    bottom: 16px;
+    bottom: 18px;
     position: absolute;
-    right: 8px;
+    right: 10px;
     width: 23px;
 }
 
 .comment-icon {
     display: block;
+    height: 17px;
     position: relative;
     text-decoration: none;
 }
 
-.comment-number  {
-    background-color: #703f6c
-    border-radius: 50%
-    bottom: -11px;
+.comment-number {
+    background-color: #703f6c;
+    border-radius: 50%;
+    bottom: -12px;
     color: white;
     display: block;
-    font-size: 8px;
-    height: 17px;
-    line-height: 17px;
+    font-size: 6px;
+    height: 15px;
+    line-height: 15px;
     position: absolute;
-    right: 0;
+    right: -6px;
     text-align: center;
-    width: 17px;
+    width: 15px;
 }
