@@ -9,6 +9,11 @@ body {
 
 }
 
+a {
+    text-decoration: none;
+
+}
+
 
 h2,
 h3,
@@ -68,6 +73,12 @@ li {
 
 li+li {
     margin-left: 20px;
+}
+
+span {
+    bottom: 0;
+    position: absolute;
+    right: 0;
 }
 
 .card {
@@ -138,9 +149,30 @@ li+li {
     /* width: 12px; */
 }
 
-.comment {
-    height: 31px;
+.comment-wrapper {
+    bottom: 16px;
     position: absolute;
-    right: 15px;
-    bottom: 15px;
+    right: 8px;
+    width: 23px;
+}
+
+.comment-icon {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.comment-number  {
+    background-color: #703f6c
+    border-radius: 50%
+    bottom: -11px;
+    color: white;
+    display: block;
+    font-size: 8px;
+    height: 17px;
+    line-height: 17px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 17px;
 }
