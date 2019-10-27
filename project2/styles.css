@@ -125,7 +125,8 @@ li+li {
     fill: whitesmoke;
 }
 
-.cls-2-heart:hover {
+.cls-2-heart:hover,
+.cls-2-heart.is-favorite {
     fill: pink;
 }
 
@@ -150,9 +151,7 @@ li+li {
 .facebook,
 .instagram,
 .pinterest,
-.twitter {
-    margin-top: 10px;
-}
+.twitter {}
 
 
 /* .twitter:hover {
@@ -166,7 +165,17 @@ li+li {
     fill: green;
 } */
 
-a:hover {
+.social-list {
+    margin-top: 24px;
+}
+
+.social-list a {
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+.social-list a:hover {
     background-color: #eaaa0a;
     border-radius: 50%;
     display: block;
@@ -174,31 +183,23 @@ a:hover {
     width: 30px;
 }
 
-.facebook:hover path {
+.social-list a:hover path {
     fill: whitesmoke;
 }
 
-.twitter:hover path {
-    fill: whitesmoke;
-}
 
-.instagram:hover path {
-    fill: whitesmoke;
-}
-
-.pinterest:hover path {
-    fill: whitesmoke;
-}
 
 .facebook,
 .instagram,
 .pinterest {
     height: 15px;
+    margin-top: 7px;
     /* width: 7px; */
 }
 
 .twitter {
     height: 14px;
+    margin-top: 8px;
     /* width: 12px; */
 }
 
