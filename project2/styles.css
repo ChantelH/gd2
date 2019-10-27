@@ -10,7 +10,6 @@ body {
 
 a {
     text-decoration: none;
-    margin: -10px;
 }
 
 
@@ -170,6 +169,7 @@ li+li {
 .social-list a {
     display: block;
     height: 30px;
+    margin: -11px;
     width: 30px;
 }
 
