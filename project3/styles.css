@@ -1,6 +1,16 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
+
+body {
+    background-color: var(--color-blue);
+    border: 10px solid var(--color-green);
+    color: var(--color-offwhite);
+    font-family: var(--font-sans);
+}
+
 
 
 .button-reset {
@@ -18,9 +28,86 @@
     cursor: default;
 }
 
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+
 input,
 select,
 textarea {
     font-family: inherit;
     font-size: inherit;
+}
+
+select {
+    cursor: pointer;
+}
+
+
+/* textarea {
+    height: 100px;
+    width: 200px;
+} */
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 3px solid black;
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    background-color: aqua;
+}
+
+
+input[type="radio"] {
+    border-radius: 50%
+}
+
+
+input[type="radio"]:checked+label,
+input[type="checkbox"]:checked+label {
+    color: aqua;
+}
+
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    background-color: aqua;
+}
+
+input[type="text"]:required:valid,
+input[type="email"]:required:valid,
+input[type="number"]:required:valid {
+    background-color: greenyellow;
+}
+
+input[type="text"]:not(:placeholder-shown):invalid,
+input[type="email"]:not(:placeholder-shown):invalid,
+input[type="number"]:not(:placeholder-shown):invalid {
+    background-color: orange;
+}
+
+
+
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    margin: -1px;
+    padding: 0;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
 }

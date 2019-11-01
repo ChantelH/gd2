@@ -13,17 +13,17 @@
 
     <form action="">
         <label for="real-name">Name</label>
-        <input id="real-name" type="text">
+        <input id="real-name" type="text" placeholder="" required>
 
 
-        <label for="tel-number">
-            <input id="tel-number" type="number">
-            Telephone Number
+        <label for="age">
+            <input id="age" type="number" placeholder="" required>
+            Age
         </label>
 
 
 
-        <input id="email" type="email">
+        <input id="email" type="email" placeholder="" required>
         <label for="email">Email</label>
 
         <label for="powers">Describe Your Powers</label>
@@ -35,6 +35,32 @@
             <option value="testing">Testing A Thing</option>
             <option value="another">Another Thing</option>
         </select>
+
+        <fieldset>
+            <legend>Category</legend>
+
+            <input name="category" id="alien" type="checkbox">
+            <label for="alien">Alien</label>
+
+            <input name="category" id="cyborg" type="checkbox">
+            <label for="cyborg">Cyborg</label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Gender</legend>
+
+            <input name="gender" id="woman" type="radio">
+            <label for="woman">Woman</label>
+
+            <input name="gender" id="man" type="radio">
+            <label for="man">Man</label>
+
+            <input name="gender" id="nonbinary" type="radio">
+            <label for="nonbinary">Nonbinary</label>
+        </fieldset>
+
+
 
 
         <button class="button-reset" type="submit">Register Now</button>
