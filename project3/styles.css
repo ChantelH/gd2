@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-blue: #163346;
+
+}
+
 body {
     background-color: var(--color-blue);
     border: 10px solid var(--color-green);
