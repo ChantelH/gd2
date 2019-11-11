@@ -6,6 +6,7 @@
 
 :root {
     --color-blue: #163346;
+    --color-gray: #d1d5de;
 
 }
 
@@ -16,6 +17,11 @@ body {
     font-family: var(--font-sans);
 }
 
+
+header {
+    background-color: var(--color-gray);
+    display: block;
+}
 
 
 .button-reset {
@@ -103,6 +109,14 @@ input[type="email"]:not(:placeholder-shown):invalid,
 input[type="number"]:not(:placeholder-shown):invalid {
     background-color: orange;
 }
+
+
+.shield {
+    margin: auto;
+    width: 200px;
+}
+
+
 
 
 
