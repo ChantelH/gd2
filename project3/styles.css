@@ -8,13 +8,16 @@
     --color-blue: #163346;
     --color-gray: #d1d5de;
 
+    --font-teko: 'Teko', sans-serif;
+    --font-bench: 'BenchNine', sans-serif;
+
 }
 
 body {
     background-color: var(--color-blue);
     border: 10px solid var(--color-green);
     color: var(--color-offwhite);
-    font-family: var(--font-sans);
+    font-family: var(--font-bench);
 }
 
 
@@ -24,20 +27,34 @@ header {
 }
 
 
-.button-reset {
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    padding: 0;
-    text-align: inherit;
+h1,
+p {
+    text-align: center;
 }
 
-.button-reset[disabled] {
-    cursor: default;
+
+
+h1 {
+    font-family: var(--font-teko);
+    font-size: 48px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+
 }
+
+
+p {
+    margin-bottom: 150px;
+    margin-top: 0;
+
+}
+
+
+
+
+
+
+
 
 fieldset {
     border: 0;
@@ -112,8 +129,28 @@ input[type="number"]:not(:placeholder-shown):invalid {
 
 
 .shield {
-    margin: auto;
-    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+
+
+
+
+.button-reset {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0;
+    text-align: inherit;
+}
+
+.button-reset[disabled] {
+    cursor: default;
 }
 
 
