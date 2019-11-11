@@ -13,11 +13,18 @@
 
 
 <header>
-    <svg viewBox="5 4.973 340 338.054" xmlns="http://www.w3.org/2000/svg" class="shield"><ellipse cx="175" cy="174" rx="170" ry="169.027" stroke="#fff" stroke-width="2"/><path d="M73.895 65.03a149.581 149.581 0 00-24.158 28.847L175 231.997 299.789 93.474a148.773 148.773 0 00-24.641-28.828l-67.938 54.095-16.23-34.384s3.99-12.178 18.118-6.04c0 0 3.687-13.475-18.109-13.475h-18.673s-6.55-1.046-11.73 9.843l-20.875 43.681-66.443-52.155" fill="#fafafa"/><path d="M86.421 292.803c51.832 38.152 122.265 38.848 174.84 1.727l-57.817-87.684-28.632 31.683-30.072-31.683zm223.881-57.343a146.412 146.412 0 0013.224-53.103l-53.058-46.83-24.247 29.964zm13.349-57.738c0-1.243.099-2.478.099-3.722a146.602 146.602 0 00-21.912-77.305l-29.124 36.022zm-79.703-9.421l-24.444 30.242 61.549 79.166a148.353 148.353 0 0027.594-38.76zM37.899 235.46a146.406 146.406 0 01-13.215-53.103l53.049-46.83 24.239 29.991zM24.55 177.722c0-1.243-.098-2.478-.098-3.722a146.584 146.584 0 0121.912-77.305l29.123 36.022zm79.703-9.421l24.444 30.242-61.549 79.166a148.327 148.327 0 01-27.593-38.76z" fill="#fafafa"/></svg>
+    <svg viewBox="5 4.973 340 338.054" xmlns="http://www.w3.org/2000/svg" class="shield">
+        <ellipse cx="175" cy="174" rx="170" ry="169.027" stroke="#fff" stroke-width="2" />
+        <path
+            d="M73.895 65.03a149.581 149.581 0 00-24.158 28.847L175 231.997 299.789 93.474a148.773 148.773 0 00-24.641-28.828l-67.938 54.095-16.23-34.384s3.99-12.178 18.118-6.04c0 0 3.687-13.475-18.109-13.475h-18.673s-6.55-1.046-11.73 9.843l-20.875 43.681-66.443-52.155"
+            fill="#fafafa" />
+        <path
+            d="M86.421 292.803c51.832 38.152 122.265 38.848 174.84 1.727l-57.817-87.684-28.632 31.683-30.072-31.683zm223.881-57.343a146.412 146.412 0 0013.224-53.103l-53.058-46.83-24.247 29.964zm13.349-57.738c0-1.243.099-2.478.099-3.722a146.602 146.602 0 00-21.912-77.305l-29.124 36.022zm-79.703-9.421l-24.444 30.242 61.549 79.166a148.353 148.353 0 0027.594-38.76zM37.899 235.46a146.406 146.406 0 01-13.215-53.103l53.049-46.83 24.239 29.991zM24.55 177.722c0-1.243-.098-2.478-.098-3.722a146.584 146.584 0 0121.912-77.305l29.123 36.022zm79.703-9.421l24.444 30.242-61.549 79.166a148.327 148.327 0 01-27.593-38.76z"
+            fill="#fafafa" /></svg>
 
-<h1>super hero registry</h1>
+    <h1>super hero registry</h1>
 
-<p>With great power there must also come -- great responsibility</p>
+    <p>With great power there must also come -- great responsibility</p>
 
 </header>
 
@@ -25,7 +32,7 @@
 <body>
 
     <form action="">
-        <label for="real-name">Name</label>
+        <label for="real-name">Real Name</label>
         <input id="real-name" type="text" placeholder="" required>
 
 
@@ -52,12 +59,30 @@
         <fieldset>
             <legend>Category</legend>
 
+            <p>Please select as many as apply to your origin and how you gainded your powers.</p>
+
             <input name="category" id="alien" type="checkbox">
             <label for="alien">Alien</label>
 
             <input name="category" id="cyborg" type="checkbox">
             <label for="cyborg">Cyborg</label>
+
+            <input name="category" id="experiment" type="checkbox">
+            <label for="cyborg">Experiment</label>
+
+            <input name="category" id="human" type="checkbox">
+            <label for="cyborg">Human</label>
+
+            <input name="category" id="inhuman" type="checkbox">
+            <label for="cyborg">Inhuman</label>
+
+            <input name="category" id="mutant" type="checkbox">
+            <label for="cyborg">Mutant</label>
+
         </fieldset>
+
+
+
 
 
         <fieldset>
@@ -71,6 +96,17 @@
 
             <input name="gender" id="nonbinary" type="radio">
             <label for="nonbinary">Nonbinary</label>
+
+            <input name="gender" id="genderqueer-genderfluid" type="radio">
+            <label for="nonbinary">Genderqueer/Genderfluid</label>
+
+            <input name="gender" id="prefer-not-to-answer" type="radio">
+            <label for="nonbinary">Prefer not to answer</label>
+
+            <input name="gender" id="prefer-to-self-describe" type="radio">
+            <label for="nonbinary">Prefer to self describe</label>
+            <textarea name="" id="prefer-to-self-describe">Text here</textarea>
+
         </fieldset>
 
 
