@@ -7,6 +7,9 @@
 :root {
     --color-blue: #163346;
     --color-gray: #d1d5de;
+    --color-offwhite: #fff;
+    --color-lightgray: #cececd;
+    --color-pureblack: #000000;
 
     --font-teko: 'Teko', sans-serif;
     --font-bench: 'BenchNine', sans-serif;
@@ -18,6 +21,7 @@ body {
     border: 10px solid var(--color-green);
     color: var(--color-offwhite);
     font-family: var(--font-bench);
+    font-size: 22px;
 }
 
 
@@ -30,6 +34,7 @@ header {
 h1,
 p {
     text-align: center;
+    color: var(--color-pureblack);
 }
 
 
@@ -43,11 +48,19 @@ h1 {
 }
 
 
-p {
+fieldset p {
     /* margin-bottom: 150px; */
+    color: var(--color-lightgray);
     margin-top: 0;
+    text-align: left;
 
 }
+
+
+/* input {
+    font-family: var(--font-bench);
+    font-size: 22px;
+} */
 
 
 
