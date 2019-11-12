@@ -92,9 +92,12 @@ textarea {
 }
 
 label {
-    display: block;
+    display: inline-block;
 }
 
+label+label {
+    display: block;
+}
 
 select {
     cursor: pointer;
@@ -109,11 +112,13 @@ input {
 
 
 
+input[type=radio],
+input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+}
 
-/* textarea {
-    height: 100px;
-    width: 200px;
-} */
 
 
 
@@ -124,11 +129,9 @@ input[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
     border: 2px solid var(--color-lightgray);
-    bottom: 1px;
     cursor: pointer;
     height: 20px;
-    position: relative;
-    vertical-align: middle;
+
     width: 20px;
 }
 
