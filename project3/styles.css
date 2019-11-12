@@ -129,6 +129,10 @@ select {
     cursor: pointer;
 }
 
+textarea {
+    margin-bottom: 20px;
+}
+
 input {
     margin-bottom: 15px;
 
