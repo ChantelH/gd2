@@ -88,9 +88,13 @@ select,
 textarea {
     font-family: inherit;
     font-size: inherit;
-    display: block;
 
 }
+
+label {
+    display: block;
+}
+
 
 select {
     cursor: pointer;
@@ -98,12 +102,20 @@ select {
 
 input {
     margin-bottom: 15px;
+    vertical-align: bottom;
+    position: relative;
+
 }
+
+
+
 
 /* textarea {
     height: 100px;
     width: 200px;
 } */
+
+
 
 
 input[type="radio"],
@@ -112,14 +124,18 @@ input[type="checkbox"] {
     -webkit-appearance: none;
     appearance: none;
     border: 2px solid var(--color-lightgray);
+    bottom: 1px;
     cursor: pointer;
     height: 20px;
+    position: relative;
+    vertical-align: middle;
     width: 20px;
 }
 
 input[type="radio"]:checked,
 input[type="checkbox"]:checked {
     background-color: aqua;
+    display: inline-block;
 }
 
 
