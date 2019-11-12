@@ -10,6 +10,7 @@
     --color-offwhite: #fff;
     --color-lightgray: #cececd;
     --color-pureblack: #000000;
+    --color-offblack: #1e2019;
 
     --font-teko: 'Teko', sans-serif;
     --font-bench: 'BenchNine', sans-serif;
@@ -31,6 +32,11 @@ header {
 }
 
 
+main {
+    background-color: var(--color-offblack);
+    padding: 10px;
+}
+
 h1,
 p {
     text-align: center;
@@ -51,6 +57,8 @@ h2 {
     color: var(--color-offwhite);
     font-family: var(--font-teko);
     font-size: 40px;
+    font-weight: 600;
+    margin-top: 0;
     text-decoration-color: var(--color-blue);
     text-transform: uppercase
 }
