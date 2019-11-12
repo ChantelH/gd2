@@ -59,7 +59,7 @@ header p {
 fieldset p {
     /* margin-bottom: 150px; */
     color: var(--color-lightgray);
-    margin-top: 0;
+    margin: 0;
     text-align: left;
 
 }
@@ -80,6 +80,7 @@ fieldset p {
 fieldset {
     border: 0;
     padding: 0;
+
 }
 
 
@@ -92,12 +93,9 @@ textarea {
 }
 
 label {
-    display: inline-block;
-}
-
-label+label {
     display: block;
 }
+
 
 select {
     cursor: pointer;
@@ -105,22 +103,8 @@ select {
 
 input {
     margin-bottom: 15px;
-    vertical-align: bottom;
-    position: relative;
 
 }
-
-
-
-input[type=radio],
-input[type=checkbox] {
-    vertical-align: middle;
-    position: relative;
-    bottom: 1px;
-}
-
-
-
 
 
 input[type="radio"],
@@ -131,7 +115,6 @@ input[type="checkbox"] {
     border: 2px solid var(--color-lightgray);
     cursor: pointer;
     height: 20px;
-
     width: 20px;
 }
 
@@ -173,6 +156,47 @@ input[type="number"]:not(:placeholder-shown):invalid {
 }
 
 
+
+
+.category {
+    margin-bottom: 20px;
+}
+
+.gender {
+    margin-bottom: 50px;
+}
+
+
+.category input,
+.category label,
+.gender input,
+.gender label {
+    vertical-align: middle;
+}
+
+
+.category,
+.gender {
+    width: 10em;
+    overflow: auto;
+}
+
+
+.category input,
+.gender input {
+    margin: 8px;
+}
+
+
+.category label,
+.gender lable {
+    width: 12em;
+    float: right;
+}
+
+
+
+
 .shield {
     margin-left: auto;
     margin-right: auto;
@@ -197,10 +221,6 @@ input[type="number"]:not(:placeholder-shown):invalid {
 .button-reset[disabled] {
     cursor: default;
 }
-
-
-
-
 
 .sr-only {
     border: 0;
