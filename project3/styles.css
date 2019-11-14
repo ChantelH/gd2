@@ -20,10 +20,10 @@
 
 body {
     background-color: var(--color-blue);
-    border: 10px solid var(--color-green);
     color: var(--color-offwhite);
     font-family: var(--font-bench);
     font-size: 22px;
+    margin: 0;
 }
 
 
@@ -86,24 +86,11 @@ header p {
 
 
 fieldset p {
-    /* margin-bottom: 150px; */
     color: var(--color-lightgray);
     margin: 0;
     text-align: left;
 
 }
-
-
-/* input {
-    font-family: var(--font-bench);
-    font-size: 22px;
-} */
-
-
-
-
-
-
 
 
 fieldset {
@@ -136,8 +123,27 @@ textarea {
 
 input {
     margin-bottom: 15px;
+    width: 100%;
 
 }
+
+
+select {
+    background: gray;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: inherit;
+    width: 100%;
+
+}
+
 
 
 input[type="radio"],
@@ -190,6 +196,14 @@ input[type="number"]:not(:placeholder-shown):invalid {
 
 
 
+#age {
+    width: 20%;
+}
+
+
+@media (min-width:375px) {}
+
+
 
 .category {
     margin-bottom: 20px;
@@ -222,17 +236,34 @@ input[type="number"]:not(:placeholder-shown):invalid {
 
 
 .category label,
-.gender lable {
+.gender label {
     width: 12em;
     float: right;
 }
 
 
 
+.confirmation {
+    border-top: 5px solid var(--color-blue);
+    display: block;
+    overflow: auto;
+    margin: 20%;
+    padding-top: 40px;
+}
+
+.confirmation input {
+    margin: 20px;
+    vertical-align: middle;
+
+}
+
+.confirmation label {
+    text-align: left;
+}
 
 .shield {
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    margin: auto;
     width: 200px;
 }
 
@@ -256,28 +287,6 @@ input[type="number"]:not(:placeholder-shown):invalid {
 .strength-container+.speed-container+.intelligence-container {
     margin: 3%;
 }
-
-
-
-
-select {
-    background: gray;
-    border: 0;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    text-align: inherit;
-    width: 100%;
-
-}
-
-
-
 
 
 .strength,
@@ -314,8 +323,10 @@ select {
 .submit {
     background: var(--color-lime);
     border: 5px solid trasnparent;
+    display: block;
     font-family: var(--font-teko);
     font-weight: 600;
+    margin: auto;
     padding: 10px;
     text-transform: uppercase;
 
