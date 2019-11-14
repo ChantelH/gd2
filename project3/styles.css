@@ -44,7 +44,7 @@ main {
 
 
 div {
-    margin-bottom: 10%;
+    margin-bottom: 10px;
 }
 
 
@@ -74,8 +74,8 @@ h2 {
     font-size: 40px;
     font-weight: 600;
     line-height: 1;
-    margin-bottom: 10%;
-    margin-top: 20%;
+    margin-bottom: 30px;
+    margin-top: 80px;
     text-transform: uppercase
 }
 
@@ -99,6 +99,7 @@ fieldset p {
 
 fieldset {
     border: 0;
+    margin: 0;
     padding: 0;
 
 }
@@ -111,6 +112,11 @@ textarea {
     font-size: inherit;
 
 }
+
+legend {
+    margin-bottom: 0;
+}
+
 
 label {
     display: block;
@@ -149,7 +155,6 @@ select {
 }
 
 
-
 input[type="radio"],
 input[type="checkbox"] {
     -moz-appearance: none;
@@ -172,10 +177,16 @@ input[type="radio"] {
     border-radius: 50%
 }
 
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+    border: 2px solid var(--color-lime);
+    opacity: 1;
+}
+
 
 input[type="radio"]:checked+label,
 input[type="checkbox"]:checked+label {
-    color: aqua;
+    color: var(--color-lime);
 }
 
 
@@ -190,6 +201,8 @@ input[type="text"]:required:valid,
 input[type="email"]:required:valid,
 input[type="number"]:required:valid {
     background-color: greenyellow;
+
+
 }
 
 input[type="text"]:not(:placeholder-shown):invalid,
@@ -201,7 +214,11 @@ input[type="number"]:not(:placeholder-shown):invalid {
 
 
 
-
+.category label:hover,
+.gender label:hover {
+    border-bottom: 3px solid var(--color-lime);
+    display: inline-block;
+}
 
 
 
@@ -212,11 +229,11 @@ input[type="number"]:not(:placeholder-shown):invalid {
 .category label,
 .gender input,
 .gender label {
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 
-.category,
+/* .category,
 .gender {
     width: 10em;
     overflow: auto;
@@ -233,7 +250,7 @@ input[type="number"]:not(:placeholder-shown):invalid {
 .gender label {
     width: 12em;
     float: right;
-}
+} */
 
 
 
@@ -342,6 +359,7 @@ input[type="number"]:not(:placeholder-shown):invalid {
     .shield {
         display: block;
         margin: auto;
+        padding-top: 50px;
         width: 200px;
     }
 
@@ -377,17 +395,25 @@ input[type="number"]:not(:placeholder-shown):invalid {
         width: 20%;
     }
 
+    .personal-characteristics {
+        width: 100%;
+        display: inline-block;
+    }
+
     .category,
     .gender {
         display: inline-block;
-        margin: 5%%;
         vertical-align: top;
-
     }
 
     .category {
-        width: 40%;
+        width: 50%;
+
     }
 
+    /* .category-gender {
+        width: 30%;
+        display: inline-block;
+    } */
 
 }
