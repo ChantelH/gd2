@@ -199,26 +199,6 @@ input[type="number"]:not(:placeholder-shown):invalid {
 }
 
 
-@media (min-width:375px) {
-
-    .strength-container,
-    .speed-container,
-    .intelligence-container {
-        display: block;
-        width: 80%;
-    }
-
-}
-
-@media (min-width:1280px) {
-
-    .strength-container,
-    .speed-container,
-    .intelligence-container {
-        display: inline-block;
-        width: 30%;
-    }
-}
 
 
 
@@ -278,36 +258,10 @@ input[type="number"]:not(:placeholder-shown):invalid {
     text-align: left;
 }
 
-.shield {
-    display: block;
-    margin: auto;
-    width: 200px;
-}
 
 
-.powers-ablilities {
-    margin: 0;
-    width: 100%;
-}
 
 
-.strength-container,
-.speed-container,
-.intelligence-container {
-    display: block;
-    margin-left: 10%;
-    width: 80%;
-}
-
-
-.strength,
-.speed,
-.intelligence {
-    margin: auto;
-    padding: 25%;
-    width: 100%;
-
-}
 
 
 
@@ -327,6 +281,7 @@ input[type="number"]:not(:placeholder-shown):invalid {
     cursor: default;
 }
 
+
 .button-reset,
 .submit {
     background: var(--color-lime);
@@ -343,6 +298,7 @@ input[type="number"]:not(:placeholder-shown):invalid {
 
 
 
+
 .sr-only {
     border: 0;
     clip: rect(0 0 0 0);
@@ -352,4 +308,59 @@ input[type="number"]:not(:placeholder-shown):invalid {
     position: absolute !important;
     height: 1px;
     width: 1px;
+}
+
+
+
+@media (min-width:375px) {
+    .powers-ablilities {
+        margin: 0;
+        width: 100%;
+    }
+
+
+    .strength-container,
+    .speed-container,
+    .intelligence-container {
+        display: block;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+
+    .strength,
+    .speed,
+    .intelligence {
+        margin: auto;
+        padding: 25%;
+        width: 100%;
+
+    }
+
+    .shield {
+        display: block;
+        margin: auto;
+        width: 200px;
+    }
+
+
+
+
+}
+
+@media (min-width:1280px) {
+
+    .strength-container,
+    .speed-container,
+    .intelligence-container {
+        display: inline-block;
+        width: 20%;
+    }
+
+    .category,
+    .gender {
+        display: inline-block;
+        margin-right: 20%;
+        vertical-align: top;
+    }
 }
