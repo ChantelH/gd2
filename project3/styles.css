@@ -11,6 +11,7 @@
     --color-lightgray: #cececd;
     --color-pureblack: #000000;
     --color-offblack: #1e2019;
+    --color-lime: #72f79f;
 
     --font-teko: 'Teko', sans-serif;
     --font-bench: 'BenchNine', sans-serif;
@@ -258,6 +259,7 @@ input[type="number"]:not(:placeholder-shown):invalid {
 
 
 
+
 select {
     background: gray;
     border: 0;
@@ -307,6 +309,19 @@ select {
 .button-reset[disabled] {
     cursor: default;
 }
+
+.button-reset,
+.submit {
+    background: var(--color-lime);
+    border: 5px solid trasnparent;
+    font-family: var(--font-teko);
+    font-weight: 600;
+    padding: 10px;
+    text-transform: uppercase;
+
+}
+
+
 
 .sr-only {
     border: 0;
