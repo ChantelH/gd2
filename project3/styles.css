@@ -42,9 +42,7 @@ main {
     left: 0;
 }
 
-div {
-    margin-bottom: 60px;
-}
+
 
 h1,
 p {
@@ -135,11 +133,11 @@ select {
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
-    padding: 10px;
+    padding: 20px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
-    text-align: inherit;
+    text-align: center;
     width: 100%;
 
 }
@@ -201,7 +199,26 @@ input[type="number"]:not(:placeholder-shown):invalid {
 }
 
 
-@media (min-width:375px) {}
+@media (min-width:375px) {
+
+    .strength-container,
+    .speed-container,
+    .intelligence-container {
+        display: block;
+        width: 80%;
+    }
+
+}
+
+@media (min-width:1280px) {
+
+    .strength-container,
+    .speed-container,
+    .intelligence-container {
+        display: inline-block;
+        width: 30%;
+    }
+}
 
 
 
@@ -277,27 +294,18 @@ input[type="number"]:not(:placeholder-shown):invalid {
 .strength-container,
 .speed-container,
 .intelligence-container {
-    border: 5px solid white;
-    display: inline-block;
-    margin-left: 2%;
-    margin-right: 2%;
-    width: 30%;
-}
-
-.strength-container+.speed-container+.intelligence-container {
-    margin: 3%;
+    display: block;
+    margin-left: 10%;
+    width: 80%;
 }
 
 
 .strength,
 .speed,
 .intelligence {
-    margin-bottom: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
-
-
+    margin: auto;
+    padding: 25%;
+    width: 100%;
 
 }
 
@@ -327,6 +335,7 @@ input[type="number"]:not(:placeholder-shown):invalid {
     font-family: var(--font-teko);
     font-weight: 600;
     margin: auto;
+    margin-bottom: 50px;
     padding: 10px;
     text-transform: uppercase;
 
