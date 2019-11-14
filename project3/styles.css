@@ -360,7 +360,12 @@ input[type="number"]:not(:placeholder-shown):invalid {
     .category,
     .gender {
         display: inline-block;
-        margin-right: 20%;
+        margin: 5%%;
         vertical-align: top;
+
+    }
+
+    .category {
+        width: 40%;
     }
 }
