@@ -120,8 +120,15 @@ legend {
 
 label {
     display: block;
+
 }
 
+label[for=strength],
+label[for=speed],
+label[for=intelligience] {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
 select {
     cursor: pointer;
@@ -233,6 +240,8 @@ input[type="number"]:not(:placeholder-shown):invalid {
 }
 
 
+
+
 /* .category,
 .gender {
     width: 10em;
@@ -251,6 +260,7 @@ input[type="number"]:not(:placeholder-shown):invalid {
     width: 12em;
     float: right;
 } */
+
 
 
 
@@ -351,7 +361,8 @@ input[type="number"]:not(:placeholder-shown):invalid {
     .speed,
     .intelligence {
         margin: auto;
-        padding: 25%;
+        padding: 20%;
+        padding-bottom: 0;
         width: 100%;
 
     }
@@ -411,9 +422,6 @@ input[type="number"]:not(:placeholder-shown):invalid {
 
     }
 
-    /* .category-gender {
-        width: 30%;
-        display: inline-block;
-    } */
+
 
 }
