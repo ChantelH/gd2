@@ -125,7 +125,7 @@ label {
 
 label[for=strength],
 label[for=speed],
-label[for=intelligience] {
+label[for=intelligience], {
     text-align: center;
     margin-bottom: 30px;
 }
@@ -219,7 +219,9 @@ input[type="number"]:not(:placeholder-shown):invalid {
 }
 
 
-
+#age {
+    max-width: 80px;
+}
 
 .category label:hover,
 .gender label:hover {
@@ -268,8 +270,7 @@ input[type="number"]:not(:placeholder-shown):invalid {
     border-top: 5px solid var(--color-blue);
     display: block;
     overflow: auto;
-    margin: 20%;
-    padding-top: 40px;
+    padding: 40px;
 }
 
 .confirmation input {
@@ -279,7 +280,7 @@ input[type="number"]:not(:placeholder-shown):invalid {
 }
 
 .confirmation label {
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -374,9 +375,7 @@ input[type="number"]:not(:placeholder-shown):invalid {
         width: 200px;
     }
 
-    #age {
-        width: 20%;
-    }
+
 
 
 
@@ -387,9 +386,7 @@ input[type="number"]:not(:placeholder-shown):invalid {
         padding: 5%;
     }
 
-    #age {
-        width 5%;
-    }
+
 
 
     #real-name,
