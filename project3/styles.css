@@ -1,0 +1,424 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-blue: #163346;
+    --color-gray: #d1d5de;
+    --color-offwhite: #fff;
+    --color-lightgray: #cececd;
+    --color-pureblack: #000000;
+    --color-offblack: #1e2019;
+    --color-lime: #72f79f;
+
+    --font-teko: 'Teko', sans-serif;
+    --font-bench: 'BenchNine', sans-serif;
+
+}
+
+body {
+    background-color: var(--color-blue);
+    color: var(--color-offwhite);
+    font-family: var(--font-bench);
+    font-size: 22px;
+    margin: 0;
+}
+
+
+header {
+    background-color: var(--color-gray);
+    display: block;
+}
+
+
+main {
+    background-color: var(--color-offblack);
+    margin: 20px;
+    padding: 15px;
+    position: relative;
+    top: -100px;
+    left: 0;
+}
+
+
+div {
+    margin-bottom: 10px;
+}
+
+
+
+h1,
+p {
+    text-align: center;
+    color: var(--color-pureblack);
+}
+
+
+
+h1 {
+    font-family: var(--font-teko);
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+}
+
+h2 {
+    border-bottom: 5px solid var(--color-blue);
+    color: var(--color-offwhite);
+    display: inline-block;
+    font-family: var(--font-teko);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    text-transform: uppercase
+}
+
+
+header p {
+    color: var(--color-blue);
+    margin: auto;
+    padding-bottom: 140px;
+
+}
+
+
+
+fieldset p {
+    color: var(--color-lightgray);
+    margin: 0;
+    text-align: left;
+
+}
+
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+
+}
+
+legend {
+    margin-bottom: 0;
+}
+
+
+label {
+    display: block;
+
+}
+
+label[for=strength],
+label[for=speed],
+label[for=intelligience], {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+select {
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+}
+
+input {
+    margin-bottom: 15px;
+    width: 100%;
+
+}
+
+
+select {
+    background: gray;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 2px solid var(--color-lightgray);
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+    background-color: aqua;
+    display: inline-block;
+}
+
+
+input[type="radio"] {
+    border-radius: 50%
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+    border: 2px solid var(--color-lime);
+    opacity: 1;
+}
+
+
+input[type="radio"]:checked+label,
+input[type="checkbox"]:checked+label {
+    color: var(--color-lime);
+}
+
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    background-color: aqua;
+}
+
+input[type="text"]:required:valid,
+input[type="email"]:required:valid,
+input[type="number"]:required:valid {
+    background-color: greenyellow;
+
+
+}
+
+input[type="text"]:not(:placeholder-shown):invalid,
+input[type="email"]:not(:placeholder-shown):invalid,
+input[type="number"]:not(:placeholder-shown):invalid {
+    background-color: orange;
+}
+
+
+#age {
+    max-width: 80px;
+}
+
+.category label:hover,
+.gender label:hover {
+    border-bottom: 3px solid var(--color-lime);
+    display: inline-block;
+}
+
+
+
+
+
+
+.category input,
+.category label,
+.gender input,
+.gender label {
+    vertical-align: top;
+}
+
+
+
+
+/* .category,
+.gender {
+    width: 10em;
+    overflow: auto;
+}
+
+
+.category input,
+.gender input {
+    margin: 8px;
+}
+
+
+.category label,
+.gender label {
+    width: 12em;
+    float: right;
+} */
+
+
+
+
+.confirmation {
+    border-top: 5px solid var(--color-blue);
+    display: block;
+    overflow: auto;
+    padding: 40px;
+}
+
+.confirmation input {
+    margin: 20px;
+    vertical-align: middle;
+
+}
+
+.confirmation label {
+    text-align: center;
+}
+
+
+
+.register-now {
+    border: 5px transparent;
+}
+
+.register-now:hover {
+    border: 10px solid var(--color-lime);
+}
+
+
+
+
+.button-reset {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0;
+    text-align: inherit;
+}
+
+.button-reset[disabled] {
+    cursor: default;
+}
+
+
+.button-reset,
+.submit {
+    background: var(--color-lime);
+    border: 5px solid trasnparent;
+    display: block;
+    font-family: var(--font-teko);
+    font-weight: 600;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+
+}
+
+
+
+
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    margin: -1px;
+    padding: 0;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+}
+
+
+
+@media (min-width:375px) {
+    .powers-ablilities {
+        margin: 0;
+        width: 100%;
+    }
+
+
+    .strength-container,
+    .speed-container,
+    .intelligence-container {
+        display: block;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+
+    .strength,
+    .speed,
+    .intelligence {
+        margin: auto;
+        padding: 20%;
+        padding-bottom: 0;
+        width: 100%;
+
+    }
+
+    .shield {
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+        width: 200px;
+    }
+
+
+
+
+
+}
+
+@media (min-width:1280px) {
+    main {
+        padding: 5%;
+    }
+
+
+
+
+    #real-name,
+    #alias,
+    #email {
+        width: 50%;
+    }
+
+
+    .strength-container,
+    .speed-container,
+    .intelligence-container {
+        display: inline-block;
+        width: 20%;
+    }
+
+    .personal-characteristics {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .category,
+    .gender {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .category {
+        width: 50%;
+
+    }
+
+
+
+}
