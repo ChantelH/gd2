@@ -1,3 +1,80 @@
+:root {
+    --color-black: #000000;
+    --color-pink: #c6177a;
+    --color-white: whitesmoke;
+
+}
+
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-black);
+    color: whitesmoke;
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2 {
+    color: var(--color-pink);
+    font-family: bigsmalls-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+
+
+ul {
+    font-family: bigsmalls-regular, sans-serif;
+    font-weight: 400;
+
+    font-style: normal;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+
+}
+
+li a {
+    color: var(--color-white);
+    margin-right: 4px;
+    margin-left: 4px;
+    padding: 8px;
+    text-decoration: none;
+}
+
+li a:hover,
+li a:focus {
+    color: var(--color-pink);
+
+}
+
+
+li+li {
+    border-left: 2px solid var(--color-white);
+}
+
+
+img {
+    width: 100%;
+}
+
+
 section {
     padding: 100px 30px;
     /* just for demo purposes */
