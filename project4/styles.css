@@ -89,6 +89,15 @@ section {
     /* just for demo purposes */
 }
 
+svg {
+    display: inline-block;
+    width: 20%;
+
+}
+
+svg path {
+    fill: var(--color-pink);
+}
 
 .cta-tickets {
     background-color: var(--color-white);
