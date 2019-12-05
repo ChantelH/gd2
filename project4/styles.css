@@ -41,7 +41,7 @@ h1 {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 50px;
 }
 
 p {
@@ -72,7 +72,8 @@ li a {
 
 li a:hover,
 li a:focus {
-    color: var(--color-pink);
+    background-color: var(--color-pink);
+    border-radius: 15%;
 }
 
 
@@ -80,13 +81,6 @@ li+li {
     border-left: 1px solid var(--color-white);
 }
 
-
-img {
-    border-top-left-radius: 30%;
-    border-bottom-right-radius: 30%;
-    width: 100%;
-
-}
 
 
 section {
@@ -140,6 +134,25 @@ svg path {
     overflow-wrap: break-word;
 }
 
+.main-title {
+    border-bottom: 4px solid var(--color-pink);
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.main-title p {
+    color: var(--color-pink);
+    font-family: bigsmalls-bold, sans-serif;
+    font-size: 60px;
+    line-height: 25px;
+}
+
+.speaker {
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    width: 100%;
+
+}
 
 
 .schedule {
@@ -157,9 +170,20 @@ svg path {
 }
 
 .share-list svg {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
 }
+
+.share-text {
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.share-text h2 {
+    font-size: 40px;
+}
+
 
 @media (width: 375px) {
     h1 {
