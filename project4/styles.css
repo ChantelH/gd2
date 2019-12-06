@@ -57,6 +57,7 @@ ul {
 
 li {
     display: inline-block;
+    max-width: 60px;
 
 }
 
@@ -81,10 +82,12 @@ li+li {
     border-left: 1px solid var(--color-white);
 }
 
-
+hr {
+    border-top: 3px solid var(--color-white);
+    width: 40%;
+}
 
 section {
-    border-bottom: 3px solid var(--color-white);
     padding: 100px 30px;
     /* just for demo purposes */
 }
@@ -135,7 +138,6 @@ svg path {
 }
 
 .main-title {
-    border-bottom: 4px solid var(--color-pink);
     padding-bottom: 80px;
     padding-top: 80px;
 }
