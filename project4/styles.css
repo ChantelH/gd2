@@ -35,6 +35,7 @@ h4 {
 }
 
 h1 {
+    font-size: 15px;
     position: absolute;
     top: 80px;
     right: 15px;
@@ -48,43 +49,54 @@ p {
     font-family: montserrat-alternates, sans-serif;
 }
 
-ul {
+nav ul {
     font-family: bigsmalls-regular, sans-serif;
     list-style: none;
     padding-left: 0;
     text-align: center;
 }
 
-li {
+nav li {
     display: inline-block;
-    max-width: 60px;
+    max-width: 75px;
 
 }
 
-li a {
+nav li a {
     color: var(--color-white);
     font-size: 10px;
-    line-height: 10px;
-    margin-right: 2px;
-    margin-left: 2px;
+    line-height: 0;
+    /* margin-right: 2px; */
+    margin-left: 6px;
     padding: 5px;
     text-decoration: none;
 }
 
-li a:hover,
-li a:focus {
+nav li a:hover,
+nav li a:focus {
     background-color: var(--color-pink);
     border-radius: 15%;
 }
 
-
-li+li {
-    border-left: 1px solid var(--color-white);
+img {
+    max-width: 195%;
+    overflow-x: hidden;
 }
 
+
+/* nav li+li {
+    border-left: 1px solid var(--color-white);
+} */
+
 hr {
-    border-top: 3px solid var(--color-white);
-    width: 40%;
+    display: block;
+    border-radius: 10px;
+    border-style: none;
+    border: 1.5px solid var(--color-white);
+    margin: 0;
+    margin-left: 30px;
+    text-shadow: none;
+    width: 500px;
 }
 
 section {
@@ -95,6 +107,16 @@ section {
 
 svg path {
     fill: var(--color-pink);
+}
+
+
+
+#speakers h3 {
+    font-size: 30px;
+}
+
+#exhibitions-learning p {
+    width: 75%;
 }
 
 .cta-tickets {
@@ -133,12 +155,12 @@ svg path {
     right: 15px;
 }
 
-.special {
-    overflow-wrap: break-word;
-}
+
+
 
 .main-title {
     padding-bottom: 80px;
+    padding-left: 30px;
     padding-top: 80px;
 }
 
@@ -149,6 +171,10 @@ svg path {
     line-height: 25px;
 }
 
+.first {
+    border: 1.5px solid var(--color-pink);
+}
+
 .speaker {
     border-top-left-radius: 30%;
     border-bottom-right-radius: 30%;
@@ -156,12 +182,19 @@ svg path {
 
 }
 
+.andrea,
+.sj,
+.arielle {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 90%;
+}
 
 .schedule {
     text-align: left;
 }
-
-
 
 .share-list a {
     display: block;
@@ -187,12 +220,14 @@ svg path {
 }
 
 
-@media (width: 375px) {
-    h1 {
-        font-size: 15px;
-    }
 
-    .main-image {
-        width: 195%;
+@media (min-width: 376px) {
+
+    .andrea,
+    .sj,
+    .arielle {
+        display: inline-block;
+        vertical-align: top;
+        width: 20%;
     }
 }
