@@ -23,6 +23,7 @@ header div {
 }
 
 header div {
+
     text-align: center;
 }
 
@@ -66,6 +67,7 @@ nav ul {
 
 nav li {
     display: inline-block;
+    line-height: .8;
     max-width: 75px;
 
 }
@@ -83,11 +85,11 @@ nav li a {
 nav li a:hover,
 nav li a:focus {
     background-color: var(--color-pink);
-    border-radius: 15%;
+    border-radius: 3px;
 }
 
 img {
-    max-width: 195%;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -127,6 +129,15 @@ svg path {
     width: 75%;
 }
 
+
+input[type="email"]:focus {
+    border: 3px solid var(--color-pink);
+}
+
+input[type="email"]:required:valid {
+    background-color: var(--color-pink);
+}
+
 .cta-tickets {
     background-color: var(--color-white);
     border-radius: 50%;
@@ -147,7 +158,7 @@ svg path {
 }
 
 .logo {
-
+    border: 3px solid red;
     left: 0;
     position: relative;
     top: 30px;
@@ -198,21 +209,55 @@ svg path {
     width: 90%;
 }
 
+
+.ticket-type p,
+.ticket-type a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+}
+
+.ticket-type a {
+    background-color: var(--color-white);
+    border-radius: 50%;
+    color: var(--color-black);
+    font-family: bigsmalls-bold, sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+    padding-bottom: 55px;
+    padding-top: 55px;
+    text-align: center;
+    text-decoration: none;
+    width: 130px;
+}
+
+.ticket-type p {
+    padding: 30px;
+}
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: inline-block;
+}
+
+
 .schedule {
     text-align: left;
 }
 
-.share-list a {
-    display: block;
-}
 
-.share-list li+li {
-    border: none;
+.share-list {
+    list-style: none;
 }
 
 .share-list svg {
     height: 40px;
     width: 40px;
+}
+
+.share-list a {
+    display: inline-block;
 }
 
 .share-text {
@@ -227,7 +272,7 @@ svg path {
 
 
 
-@media (min-width: 376px) {
+@media (min-width:376px) {
 
     .andrea,
     .sj,
@@ -235,5 +280,18 @@ svg path {
         display: inline-block;
         vertical-align: top;
         width: 20%;
+    }
+}
+
+@media (max-width:799px) {
+    .ticket-type:first-of-type a {
+        float: left;
+    }
+}
+
+@media (min-width:800px) {
+    .ticket-type {
+        display: inline-block;
+        width: 45%;
     }
 }
