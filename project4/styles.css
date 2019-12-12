@@ -23,7 +23,6 @@ header div {
 }
 
 header div {
-
     text-align: center;
 }
 
@@ -50,6 +49,7 @@ h4 {
 
 h1 {
     font-size: 15px;
+    font: style 4vw;
     line-height: 1.5;
     margin: 0;
 }
