@@ -238,7 +238,7 @@ input[type="email"]:required:valid {
 .clearfix::after {
     clear: both;
     content: "";
-    display: inline-block;
+    display: table;
 }
 
 
