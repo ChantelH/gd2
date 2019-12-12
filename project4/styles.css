@@ -272,7 +272,7 @@ input[type="email"]:required:valid {
 
 
 
-@media (min-width:376px) {
+@media (min-width: 401px) and (max-width: 960px) {
 
     .andrea,
     .sj,
@@ -281,17 +281,19 @@ input[type="email"]:required:valid {
         vertical-align: top;
         width: 20%;
     }
+
+
+
 }
 
-@media (max-width:799px) {
+@media (max-width:961px) {
     .ticket-type:first-of-type a {
         float: left;
     }
-}
 
-@media (min-width:800px) {
     .ticket-type {
         display: inline-block;
         width: 45%;
     }
+
 }
