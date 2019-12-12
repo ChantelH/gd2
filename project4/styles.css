@@ -161,6 +161,11 @@ input[type="email"]:required:valid {
     width: 90px;
 }
 
+.cta-tickets:hover {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+}
+
 .logo {
     left: 0;
     top: 30px;
@@ -259,6 +264,10 @@ input[type="email"]:required:valid {
 }
 
 
+.share-list svg path:hover {
+    fill: var(--color-white);
+}
+
 .share-text {
     margin: auto;
     padding: 50px;
@@ -286,8 +295,7 @@ input[type="email"]:required:valid {
     .schedule-day-one {
         columns: 2;
         column-gap: 30px;
-
-        column-width: 40px;
+        column-width: 60px;
         height: 950px;
         margin: 15%;
         text-align: left;
@@ -296,10 +304,9 @@ input[type="email"]:required:valid {
     .schedule-day-two {
         columns: 2;
         column-gap: 30px;
-
-        column-width: 40px;
+        column-width: 60px;
         height: 950px;
-        margin: 15%;
+        margin-left: 15%;
         text-align: left;
     }
 
