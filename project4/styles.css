@@ -294,6 +294,7 @@ input[type="email"]:required:valid {
 
     .ticket-type {
         display: inline-block;
+        vertical-align: top;
         width: 45%;
     }
 
