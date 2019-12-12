@@ -113,7 +113,7 @@ hr {
 }
 
 section {
-    padding: 100px 30px;
+    padding: 50px 30px;
     /* just for demo purposes */
 }
 
@@ -285,6 +285,11 @@ input[type="email"]:required:valid {
     margin: auto;
 }
 
+.share-list a {
+    display: block;
+    margin: auto;
+}
+
 .share-list svg {
     height: 40px;
     width: 40px;
@@ -294,10 +299,7 @@ input[type="email"]:required:valid {
     display: inline-block;
 }
 
-.share-list a {
-    display: block;
-    margin: auto;
-}
+
 
 
 .share-list a:hover path {
@@ -328,31 +330,39 @@ input[type="email"]:required:valid {
         margin-left: 28px;
     }
 
-    .schedule-day-one {
-        columns: 2;
-        column-gap: 30px;
-        column-width: 60px;
-        height: 950px;
-        margin: 15%;
-        text-align: left;
+}
+
+@media (min-width: 920px) {
+
+    .schedule h3 {
+        margin-left: 200px;
     }
 
+    .schedule-day-one,
     .schedule-day-two {
         columns: 2;
-        column-gap: 30px;
-        column-width: 60px;
-        height: 950px;
-        margin-left: 15%;
+        column-gap: 40px;
+        column-width: 200px;
+        display: inline-block;
+        /* height: 970px; */
         text-align: left;
     }
 
-    #schedule {
+    .schedule-day-one {
+        padding-left: 200px;
+    }
+
+    .schedule+.schedule {
+        padding-left: 150px;
+    }
+
+    .schedule {
         display: inline-block;
     }
 
-
-
 }
+
+
 
 @media (max-width: 959px) {
 
