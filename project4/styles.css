@@ -201,13 +201,7 @@ input[type="email"]:required:valid {
 
 }
 
-.andrea {
-    margin-left: 3%;
-}
-
-.andrea,
-.sj,
-.arielle {
+.speaker-container {
     display: block;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -279,13 +273,14 @@ input[type="email"]:required:valid {
 
 @media (min-width: 450px) {
 
-    .andrea,
-    .sj,
-    .arielle {
+    .speaker-container {
         display: inline-block;
-        padding: 3%;
         vertical-align: top;
-        width: 30%;
+        width: 27%;
+    }
+
+    .speaker-container+.speaker-container {
+        margin-left: 28px;
     }
 
     .schedule-day-one {
@@ -294,6 +289,7 @@ input[type="email"]:required:valid {
 
         column-width: 40px;
         height: 950px;
+        margin: 15%;
         text-align: left;
     }
 
