@@ -109,7 +109,7 @@ hr {
     margin: 0;
     margin-left: 30px;
     text-shadow: none;
-    width: 500px;
+    width: calc(100% - 30px);
 }
 
 section {
@@ -313,6 +313,7 @@ input[type="email"]:required:valid {
 
     .ticket-type {
         display: inline-block;
+        vertical-align: top;
         width: 45%;
     }
 
