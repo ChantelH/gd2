@@ -134,8 +134,38 @@ svg path {
     width: 75%;
 }
 
+.top-link {
+    background-color: gray;
+    border-radius: 50%;
+    color: var(--color-white);
+    display: block;
+    font-family: bigsmalls-bold, sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    height: 40px;
+    padding-top: 13px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    top: 700px;
+    width: 40px;
+}
 
-input[type="email"]:focus {
+
+label {
+    display: block;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+input[type="email"]:focus:hover {
     border: 3px solid var(--color-pink);
 }
 
@@ -227,6 +257,7 @@ input[type="email"]:required:valid {
     color: var(--color-black);
     font-family: bigsmalls-bold, sans-serif;
     font-size: 15px;
+    margin-left: 18px;
     line-height: 15px;
     padding-bottom: 55px;
     padding-top: 55px;
@@ -236,7 +267,7 @@ input[type="email"]:required:valid {
 }
 
 .ticket-type p {
-    padding: 30px;
+    margin: 0;
 }
 
 .clearfix::after {
@@ -263,8 +294,13 @@ input[type="email"]:required:valid {
     display: inline-block;
 }
 
+.share-list a {
+    display: block;
+    margin: auto;
+}
 
-.share-list svg path:hover {
+
+.share-list a:hover path {
     fill: var(--color-white);
 }
 
@@ -280,7 +316,7 @@ input[type="email"]:required:valid {
 
 
 
-@media (min-width: 450px) {
+@media (min-width: 630px) {
 
     .speaker-container {
         display: inline-block;
@@ -318,16 +354,17 @@ input[type="email"]:required:valid {
 
 }
 
-@media (min-width:375px) {
+@media (max-width: 959px) {
 
-    .ticket-type:first-of-type a {
+    .ticket-type:first-of-type {
         float: left;
     }
 
-    .ticket-type {
-        display: inline-block;
+    .ticket-type .students {
+        margin-left: 0;
+        margin-right: 18px;
         vertical-align: top;
-        width: 45%;
+
     }
 
 }
