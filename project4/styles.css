@@ -334,6 +334,12 @@ input[type="email"]:required:valid {
 
 @media (min-width: 920px) {
 
+    .exhibits {
+        display: inline-block;
+        width: 20%;
+
+    }
+
     .schedule h3 {
         margin-left: 200px;
     }
@@ -348,8 +354,14 @@ input[type="email"]:required:valid {
         text-align: left;
     }
 
-    .schedule-day-one {
-        padding-left: 200px;
+    section {
+        display: block;
+        margin: auto;
+    }
+
+    #schedule {
+        display: block;
+        margin: auto;
     }
 
     .schedule+.schedule {
