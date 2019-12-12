@@ -27,6 +27,9 @@ header div {
     text-align: center;
 }
 
+header h3 {
+    margin: 0;
+}
 
 h1,
 h2,
@@ -47,7 +50,8 @@ h4 {
 
 h1 {
     font-size: 15px;
-    line-height: 1;
+    line-height: 1.5;
+    margin: 0;
 }
 
 h2 {
@@ -158,9 +162,7 @@ input[type="email"]:required:valid {
 }
 
 .logo {
-    border: 3px solid red;
     left: 0;
-    position: relative;
     top: 30px;
     width: 35%;
 }
