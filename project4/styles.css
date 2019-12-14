@@ -54,34 +54,47 @@ h1 {
 }
 
 h2 {
-    font-size: 50px;
+    margin: 20px;
+    margin-left: 0;
 }
 
 p {
     font-family: montserrat-alternates, sans-serif;
 }
 
+nav {
+    text-align: center;
+    margin-top: 30px;
+    position: sticky;
+    width: 100%;
+}
+
 nav ul {
+    display: block;
     font-family: bigsmalls-regular, sans-serif;
     list-style: none;
+    margin: 0;
     padding-left: 0;
-    text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 nav li {
     display: inline-block;
     line-height: .8;
-    max-width: 75px;
+    max-width: 15%;
 
+}
+
+nav li+li {
+    padding-left: 5%;
 }
 
 nav li a {
     color: var(--color-white);
+    display: block;
     font-size: 10px;
-    line-height: 0;
-    /* margin-right: 2px; */
-    margin-left: 6px;
-    padding: 5px;
+    line-height: 1;
     text-decoration: none;
 }
 
@@ -95,11 +108,6 @@ img {
     max-width: 100%;
     overflow-x: hidden;
 }
-
-
-/* nav li+li {
-    border-left: 1px solid var(--color-white);
-} */
 
 hr {
     display: block;
@@ -134,9 +142,18 @@ svg path {
     width: 75%;
 }
 
+#exhibitions-learning>h2:nth-child(1) {
+    line-height: 0.5;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
 .top-link {
     background-color: gray;
     border-radius: 50%;
+    bottom: 10px;
     color: var(--color-white);
     display: block;
     font-family: bigsmalls-bold, sans-serif;
@@ -145,10 +162,9 @@ svg path {
     height: 40px;
     padding-top: 13px;
     position: fixed;
-    right: 0;
+    right: 10px;
     text-align: center;
     text-decoration: none;
-    top: 700px;
     width: 40px;
 }
 
@@ -281,8 +297,11 @@ input[type="email"]:required:valid {
 
 
 .share-list {
+    letter-spacing: 30px;
     list-style: none;
     margin: auto;
+    text-align: center;
+
 }
 
 .share-list a {
@@ -340,36 +359,58 @@ input[type="email"]:required:valid {
 
     }
 
+    .schedule-wrapper {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
     .schedule h3 {
         margin-left: 200px;
     }
 
     .schedule-day-one,
     .schedule-day-two {
-        columns: 2;
-        column-gap: 40px;
-        column-width: 200px;
-        display: inline-block;
-        /* height: 970px; */
-        text-align: left;
+        display: inline-grid;
+        font-size: 12px;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        grid-column-gap: 50px;
+        width: 500px;
+
     }
 
-    section {
+    section#schedule {
         display: block;
         margin: auto;
     }
 
-    #schedule {
-        display: block;
-        margin: auto;
+    section#schedule h2 {
+        letter-spacing: 20px;
+        text-align: center;
     }
+
 
     .schedule+.schedule {
-        padding-left: 150px;
+        padding-left: 50px;
     }
 
     .schedule {
         display: inline-block;
+    }
+
+    .exhibitions-wrapper {
+        display: grid;
+        font-size: 12px;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        grid-column-gap: 50px;
+        margin: auto;
+        padding-left: 10%;
+        padding-right: 5%;
+
     }
 
 }
