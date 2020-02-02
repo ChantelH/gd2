@@ -63,10 +63,12 @@ p {
 }
 
 nav {
-    text-align: center;
+    background-color: var(--color-black);
     margin-top: 30px;
     margin-bottom: 15px;
     position: sticky;
+    text-align: center;
+    top: 0;
     width: 100%;
 }
 
@@ -74,8 +76,7 @@ nav ul {
     display: block;
     font-family: bigsmalls-regular, sans-serif;
     list-style: none;
-    margin: 0;
-    position: sticky;
+
 }
 
 nav li {
@@ -273,7 +274,7 @@ input[type="email"]:required:valid {
 .ticket-type a {
     display: inline-block;
     vertical-align: middle;
-    width: 45%;
+    width: 25%;
 }
 
 .ticket-type a {
@@ -293,6 +294,11 @@ input[type="email"]:required:valid {
 
 .ticket-type p {
     margin: 0;
+    margin-left: 20px;
+}
+
+.students {
+    float: left;
 }
 
 .clearfix::after {
