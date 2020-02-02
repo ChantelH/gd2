@@ -270,10 +270,15 @@ input[type="email"]:required:valid {
 }
 
 .speaker-container {
-    display: block;
+    display: inline-block;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 80%;
+    vertical-align: top;
+    width: 27%;
+}
+
+.speaker-container+.speaker-container {
+    margin-left: 28px;
 }
 
 
