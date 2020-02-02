@@ -129,7 +129,7 @@ hr {
     margin: 0;
     margin-left: 30px;
     text-shadow: none;
-    width: calc(100% - 30px);
+    width: calc(100% - 60%);
 }
 
 section {
@@ -140,6 +140,11 @@ section {
 
 svg path {
     fill: var(--color-pink);
+}
+
+#about,
+#event-year p {
+    max-width: 40%;
 }
 
 #speakers {
@@ -355,6 +360,10 @@ input[type="email"]:required:valid {
 
 
 @media (min-width: 630px) {
+
+    /* p {
+        max-width: 600px;
+    } */
 
     .speaker-container {
         display: inline-block;
