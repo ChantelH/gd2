@@ -1,0 +1,464 @@
+:root {
+    --color-black: #000000;
+    --color-pink: #c6177a;
+    --color-white: whitesmoke;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    transition: all 300ms;
+}
+
+body {
+    background-color: var(--color-black);
+    color: whitesmoke;
+    font-family: montserrat-alternates, sans-serif;
+    margin: 0;
+}
+
+header img,
+header div {
+    display: inline-block;
+}
+
+header div {
+    text-align: center;
+}
+
+header h3 {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-pink);
+}
+
+h1,
+h2 {
+    font-family: bigsmalls-bold, sans-serif;
+}
+
+h3,
+h4 {
+    font-family: bigsmalls-regular, sans-serif;
+
+}
+
+h1 {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h2 {
+    margin: 20px;
+    margin-left: 0;
+}
+
+p {
+    font-family: montserrat-alternates, sans-serif;
+}
+
+nav {
+    background-color: var(--color-black);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    position: sticky;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    display: block;
+    font-family: bigsmalls-regular, sans-serif;
+    list-style: none;
+    text-align: center;
+
+}
+
+nav li {
+    display: inline-block;
+    line-height: .8;
+    max-width: 15%;
+
+}
+
+nav li+li {
+    margin-left: 6px;
+    padding-left: 5%;
+}
+
+nav li a {
+    color: var(--color-white);
+    display: block;
+    font-size: 10px;
+    line-height: 1;
+    text-decoration: none;
+}
+
+nav li a:hover,
+nav li a:focus {
+    background-color: var(--color-pink);
+    border-radius: 3px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+
+}
+
+#top>nav:nth-child(2)>ul:nth-child(1) {
+    padding-left: 0px;
+}
+
+
+img {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+hr {
+    display: block;
+    border-radius: 10px;
+    border-style: none;
+    border: 1.5px solid var(--color-white);
+    margin: 0;
+    margin-left: 30px;
+    text-shadow: none;
+    width: calc(100% - 60%);
+}
+
+section {
+    padding: 50px 30px;
+    /* just for demo purposes */
+}
+
+
+svg path {
+    fill: var(--color-pink);
+}
+
+#about,
+#event-year p {
+    max-width: 40%;
+}
+
+#speakers {
+    margin: auto;
+}
+
+#speakers h3 {
+    font-size: 30px;
+}
+
+#exhibitions-learning p {
+    width: 75%;
+}
+
+#exhibitions-learning>h2:nth-child(1) {
+    line-height: 0.5;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+.top-link {
+    background-color: gray;
+    border-radius: 50%;
+    bottom: 10px;
+    color: var(--color-white);
+    display: block;
+    font-family: bigsmalls-bold, sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    height: 40px;
+    padding-top: 13px;
+    position: fixed;
+    right: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 40px;
+}
+
+
+label {
+    display: block;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+input[type="email"]:focus:hover {
+    border: 3px solid var(--color-pink);
+}
+
+input[type="email"]:required:valid {
+    background-color: var(--color-pink);
+}
+
+.cta-tickets {
+    background-color: var(--color-white);
+    border-radius: 50%;
+    color: var(--color-black);
+    display: block;
+    font-family: bigsmalls-bold, sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    height: 90px;
+    padding-top: 39px;
+    position: absolute;
+    right: 20px;
+    text-align: center;
+    text-decoration: none;
+    top: 30px;
+    width: 90px;
+}
+
+.cta-tickets:hover {
+    background-color: var(--color-pink);
+    color: var(--color-white);
+}
+
+.logo {
+    left: 0;
+    top: 30px;
+    width: 35%;
+}
+
+.theme {
+    color: var(--color-white);
+    font-size: 8px;
+    letter-spacing: 3px;
+    line-height: 1;
+}
+
+
+
+
+.main-title {
+    padding-bottom: 80px;
+    padding-left: 30px;
+    padding-top: 80px;
+}
+
+.main-title p {
+    color: var(--color-pink);
+    font-family: bigsmalls-bold, sans-serif;
+    font-size: 60px;
+    line-height: 25px;
+}
+
+.first {
+    border: 1.5px solid var(--color-pink);
+}
+
+.speaker {
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    width: 100%;
+
+}
+
+.speaker-container {
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    vertical-align: top;
+    width: 27%;
+}
+
+.speaker-container+.speaker-container {
+    margin-left: 28px;
+}
+
+
+.ticket-type p,
+.ticket-type a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+}
+
+.ticket-type a {
+    background-color: var(--color-white);
+    border-radius: 50%;
+    color: var(--color-black);
+    font-family: bigsmalls-bold, sans-serif;
+    font-size: 15px;
+    margin-left: 18px;
+    line-height: 15px;
+    padding-bottom: 55px;
+    padding-top: 55px;
+    text-align: center;
+    text-decoration: none;
+    width: 130px;
+}
+
+.ticket-type p {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.students {
+    float: left;
+}
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+
+
+
+.share-list {
+    letter-spacing: 30px;
+    list-style: none;
+    margin: auto;
+    text-align: center;
+
+}
+
+.share-list a {
+    display: block;
+    margin: auto;
+}
+
+.share-list svg {
+    height: 40px;
+    width: 40px;
+}
+
+.share-list li {
+    display: inline-block;
+}
+
+
+
+
+.share-list a:hover path {
+    fill: var(--color-white);
+}
+
+.share-text {
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.share-text h2 {
+    font-size: 40px;
+}
+
+
+
+@media (min-width: 630px) {
+
+    /* p {
+        max-width: 600px;
+    } */
+
+    .speaker-container {
+        display: inline-block;
+        vertical-align: top;
+        width: 27%;
+    }
+
+    .speaker-container+.speaker-container {
+        margin-left: 28px;
+    }
+
+}
+
+@media (min-width: 920px) {
+
+    .exhibits {
+        display: inline-block;
+        width: 20%;
+
+    }
+
+    .schedule-wrapper {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .schedule h3 {
+        margin-left: 200px;
+    }
+
+    .schedule-day-one,
+    .schedule-day-two {
+        display: inline-grid;
+        font-size: 12px;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        grid-column-gap: 50px;
+        width: 500px;
+
+    }
+
+    section#schedule {
+        display: block;
+        margin: auto;
+    }
+
+    section#schedule h2 {
+        letter-spacing: 20px;
+        text-align: center;
+    }
+
+
+    .schedule+.schedule {
+        padding-left: 50px;
+    }
+
+    .schedule {
+        display: inline-block;
+    }
+
+    .exhibitions-wrapper {
+        display: grid;
+        font-size: 12px;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        grid-column-gap: 50px;
+        margin: auto;
+        padding-left: 10%;
+        padding-right: 5%;
+
+    }
+
+}
+
+
+
+@media (max-width: 959px) {
+
+    .ticket-type:first-of-type {
+        float: left;
+    }
+
+    .ticket-type .students {
+        margin-left: 0;
+        margin-right: 18px;
+        vertical-align: top;
+
+    }
+
+}
